@@ -1,0 +1,15 @@
+.mainWrapper {
+  @apply bg-sky-900/50 p-4 rounded-2xl mb-5;
+}
+
+.table {
+  @apply w-full;
+}
+
+.tableHeaderCell {
+  @apply text-center font-medium;
+}
+
+.tableDataCell {
+  @apply text-center font-semibold;
+}
