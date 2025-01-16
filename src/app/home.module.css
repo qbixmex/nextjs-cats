@@ -1,0 +1,9 @@
+.mainWrapper {
+  @apply
+    w-full sm:w-10/12 md:w-8/12 lg:w-1/2 mx-auto
+    grid grid-rows-[auto_1fr_auto] min-h-screen p-5 gap-5;
+}
+
+.mainContent {
+  @apply container mx-auto px-5;
+}
