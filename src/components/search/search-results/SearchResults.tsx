@@ -23,10 +23,14 @@ const SearchResults: FC<Props> = ({ name }) => {
           <div className="flex justify-between">
             <div>
               <h2 className="text-2xl font-semibold text-gray-200">
-                { name }
+                { name ? name : "User" }
               </h2>
               <p className="text-blue-400 italic">
-                <a href="#">@{name.replaceAll(' ', '_').toLowerCase()}</a>
+                <a href="#">@{
+                  name
+                    ? name.replaceAll(' ', '_').toLowerCase()
+                    : "user"
+                }</a>
               </p>
               <p className="text-gray-400 my-5">This profile has no bio.</p>
             </div>
